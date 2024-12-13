@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "6lw5PjmZHd8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\GRINFOR\\Desktop\\t.i douglas\\estudos\\CSHARP\\UserApi\\UserApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\GRINFOR\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0\\microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "C:\\Users\\GRINFOR\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
