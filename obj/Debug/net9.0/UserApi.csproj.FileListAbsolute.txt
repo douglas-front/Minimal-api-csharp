@@ -32,3 +32,9 @@ C:\Users\GRINFOR\Desktop\t.i douglas\estudos\CSHARP\UserApi\obj\Debug\net9.0\ref
 C:\Users\GRINFOR\Desktop\t.i douglas\estudos\CSHARP\UserApi\obj\Debug\net9.0\UserApi.pdb
 C:\Users\GRINFOR\Desktop\t.i douglas\estudos\CSHARP\UserApi\obj\Debug\net9.0\UserApi.genruntimeconfig.cache
 C:\Users\GRINFOR\Desktop\t.i douglas\estudos\CSHARP\UserApi\obj\Debug\net9.0\ref\UserApi.dll
+C:\Users\GRINFOR\Desktop\t.i douglas\estudos\CSHARP\UserApi\bin\Debug\net9.0\DnsClient.dll
+C:\Users\GRINFOR\Desktop\t.i douglas\estudos\CSHARP\UserApi\bin\Debug\net9.0\MongoDB.Bson.dll
+C:\Users\GRINFOR\Desktop\t.i douglas\estudos\CSHARP\UserApi\bin\Debug\net9.0\MongoDB.Driver.dll
+C:\Users\GRINFOR\Desktop\t.i douglas\estudos\CSHARP\UserApi\bin\Debug\net9.0\SharpCompress.dll
+C:\Users\GRINFOR\Desktop\t.i douglas\estudos\CSHARP\UserApi\bin\Debug\net9.0\Snappier.dll
+C:\Users\GRINFOR\Desktop\t.i douglas\estudos\CSHARP\UserApi\bin\Debug\net9.0\ZstdSharp.dll
