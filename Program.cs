@@ -20,12 +20,11 @@ app.UseHttpsRedirection();
 app.MapGet("/", ()=>{
 
     ConnectionDB connectionDB = new();
-    connectionDB.Connection();
 
-    List<UserModel> users = [];
-    users.Add(new UserModel { Id = 1, UserName = "douglas", Contact = "81 982671743"});
+    // List<UserModel> users = [];
+    // users.Add(new UserModel { Id = 1, UserName = "douglas", Contact = "81 982671743"});
 
-    return users;
+    return "ok";
 });
 
 app.Run();

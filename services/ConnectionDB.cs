@@ -1,22 +1,27 @@
 using Microsoft.OpenApi.Any;
 using MongoDB.Driver;
+using UserApi.Models;
 
 namespace UserApi.Services;
-//0011
 public class ConnectionDB
 {
+    private readonly IMongoCollection<UserModel>? _collection;
 
-    public void Connection()
+    public ConnectionDB()
     {
         try
         {
             MongoClient dbClient = new MongoClient("mongodb+srv://douglasjknw007:0011@cluster0.6pvyx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
-            var dbList = dbClient.ListDatabases().ToList();
-            Console.WriteLine("conectado");
-            foreach (var db in dbList)
-            {
-                Console.WriteLine(db);
+            if (dbClient.GetDatabase("UserApi") != null){
+                Console.WriteLine("pegou");
             }
+            else{
+                return;
+            }
+         
+            var userApiDataBase = dbClient.GetDatabase("UserApi");
+            _collection = userApiDataBase.GetCollection<UserModel>("Users");
+            Console.WriteLine("conectado");
         }
         catch (System.Exception)
         {
