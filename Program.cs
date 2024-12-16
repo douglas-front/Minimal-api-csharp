@@ -17,14 +17,28 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/", ()=>{
-
+app.MapGet("/", () =>
+{
     ConnectionDB connectionDB = new();
+    List<UserModel> users = connectionDB.GetUsers();
+    return users;
+});
 
-    // List<UserModel> users = [];
-    // users.Add(new UserModel { Id = 1, UserName = "douglas", Contact = "81 982671743"});
+app.MapPost("/post", () =>
+{
+    try
+    {
+        ConnectionDB connectionDB = new();
 
-    return "ok";
+        UserModel user = new UserModel() { UserName = "Douglas", Contact = "81 972561623" };
+        connectionDB.PostUser(user);
+        return "Usuario adicionado com sucesso";
+    }
+    catch (System.Exception)
+    {
+
+        throw new Exception("erro ao adicionar");
+    }
 });
 
 app.Run();

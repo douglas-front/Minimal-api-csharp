@@ -1,4 +1,3 @@
-using Microsoft.OpenApi.Any;
 using MongoDB.Driver;
 using UserApi.Models;
 
@@ -31,4 +30,22 @@ public class ConnectionDB
 
     }
 
+    public void PostUser(UserModel user){
+        try
+        {
+            _collection?.InsertOne(user);
+            Console.WriteLine("usuario adicionado com sucesso");
+        }
+        catch (System.Exception)
+        {
+            Console.WriteLine("erro ao adicionar usuario");
+            throw new Exception("erro ao adicionar usuario");
+        }
+    }
+
+    public List<UserModel> GetUsers(){
+        List<UserModel> users = _collection.Find(FilterDefinition<UserModel>.Empty).ToList();
+
+        return users;
+    }
 }
